@@ -1,0 +1,442 @@
+/* jeg starter med at nultstille browseren indstillinger */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+* {
+    font-family: impact, sans serif;
+    
+}
+
+/* nu vil jeg style min header / navbar */
+
+.menubar {
+    text-align: center;
+    background-color: beige;
+}
+
+.menubar ul {
+    display:inline-flex;
+    color: darkgreen;
+}
+
+.menubar ul li {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;  
+}
+
+.menubar ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li a:hover {
+    color: blue;
+}
+
+
+.menubar ul li a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.active, .menubar ul li:hover {
+    background: #f8a9f4;
+    border-radius: 3px;
+}
+
+.submenu {
+    display: none;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position:absolute;
+    background-color: beige;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid darkgreen;
+    border-radius: 0;
+    text-align: left;
+    background: transparent;
+}
+
+.menubar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li:hover .submenu ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+    color: blue;
+}
+
+.submenu2 {
+    display: none;
+}
+
+.hoverme:hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: beige;
+}
+
+/* nu vil jeg style mit logo og min H1 overskrift  */
+
+.logooverskrift {
+    display: flex; /* Aktiverer flexbox */
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+.logogrøn {
+    width: 100px; /* Bredde */
+    height: 100px; /* Højde */
+    margin-left: 100px; /* Højremargin */
+    margin-right: 100px;
+}
+
+h1 {
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+    margin-top: 20px;
+    color: darkgreen;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000;
+    width: 1500px;
+}
+
+/* Nu vil jeg gøre sådan at mine øversteartikler er placeret ved siden af hinanden  */
+
+.oversteartikler {
+    display: flex;
+    
+}
+
+
+/* jeg styler nu den første bokse med artiklen "sy din egen mulepose" */
+
+h3 {
+    font-family: Impact, sans-serif;
+    font-size: 20px;
+    color: darkgreen;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: darkgreen;
+    width: 300px;
+    line-height: 30px;
+}
+
+.mulepose {
+    width: 250px;
+    height: 300px;
+}
+
+
+.forsideartikel1 {
+    display: flex;
+    border: #000 2px solid;
+    padding: 20px;
+    width: 700px;   
+}
+
+.tekstartikel1 {
+    padding: 20px;
+   
+}
+
+.billedeartikel1 {
+    flex: 1;
+    padding: 20px;
+    margin-left: 50px;
+    
+}
+
+.artikel1overskrift {
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+/* jeg styler nu min boks nummer 2, med artiklen "nybegynder guide" */
+
+.forsideartikel2 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    width: 379px;
+}
+
+.nybegynderguide1 {
+    width: 200px;
+    height: 300px;
+    margin-left: 95px;
+    margin-top: 30px;
+}
+
+.overskriftartikel2 {
+    margin-left: 115px;
+    margin-top: 20px;
+}
+
+/* jeg styler nu min tredje boks, med artiklen "hvorfor genbrug? */
+
+.forsideartikel3 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    width: 375px;
+}
+
+.overskriftartikel3 {
+    margin-left: 90px;
+}
+
+.klodeiblaa {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/* nu vil jeg placere de nederste artikler ved siden af hinanden */
+
+.nedersteartikler {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* nu vil jeg style min artikel der hedder "kurser i Aarhus"*/
+
+.forsideartikel4 {
+    width: 450px;
+    height: 500px;
+}
+
+.overskriftartikel4 {
+    
+    border: 2px solid black; /* Tilføj en 2px tyk sort kant */
+    padding-left: 80px;
+    padding-right: 40px;
+    border-top: white;
+    padding-bottom: 5px;
+    padding-top: 39.5px;
+
+}
+
+.rødfigur {
+    width: 335px;
+    border: 2px solid black; /* Tilføj en 2px tyk sort kant */
+    padding-top: 40px;
+    padding-bottom: 47px;
+    border-bottom: white;
+
+}
+  
+
+/* nu vil jeg style min artikel der hedder "brug dine gamel jeans */
+
+.forsideartikel5 {
+    width: 350px;
+    height: 400px;
+}
+
+.jeans1 {
+    width: 360px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+    padding: 61.25px 20px;
+    border-bottom: white;
+
+}
+
+ .overskriftartikel5 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+    padding-top: 29px;
+    padding-bottom: 5px;
+    padding-left: 85px;
+    border-top: white;
+    
+     }
+
+/* nu vil jeg style artiklen "genbrugsguide" */
+/* MANGLER AT INDSÆTTE OG STYLE BILLEDE  */
+
+.forsideartikel6 {
+    border: #000 2px solid;
+    width: 350px;
+    height: 300px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+}
+
+.genbrugsbutik {
+    width: 374px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+    padding: 0px 35px;
+    padding-top: 40px;
+    border-bottom: white;
+}
+
+.overskriftartikel6 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+    padding-top: 67px;
+    padding-bottom: 5px;
+    padding-left: 105px;
+    border-top: white;
+    
+}
+
+/* jeg vil nu style artiklen "sy en scrunchie" */
+
+.forsideartikel7 {
+    width: 500px;
+    height: 300px;
+   
+}
+
+.scrunchies {
+    width: 372px;
+    border-style: solid;
+    border-width: 2px;
+   padding: 19px 0;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+    border-bottom: white;
+}
+
+.overskriftartikel7 {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000; /* Tilføj en 2px tyk sort kant */
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-left: 115px;
+    border-top: white;
+}
+
+/* jeg styler nu den grønne figur*/
+
+.grønfigur {
+    width: 400px;
+    margin-left: 500px;
+}
+
+/* jeg vil nu style min footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* jeg styler sektionen med kontakt */
+
+.kontakt {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 33%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+    
+}
+
+.kontakt a {
+    color: darkgreen;
+}
+
+.telefon {
+    padding-left: 140px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+
+
+/* jeg styler sektionen for sociale medier  */
+
+.socialemedier {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 33%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.socialemedier a {
+    color: darkgreen;
+}
+
+/* jeg styler den sidste boks med logo og titel */
+
+.grøngarderobe {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 35%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.lillelogo {
+    width: 100px;
+}
+
+/* jeg styler mine a links til at ændre sig ved hoover */
+
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: blue;}
+
+a h3 {
+    transition: color 0.3s;
+}
+
+a h3:hover {
+    color: blue;
+}

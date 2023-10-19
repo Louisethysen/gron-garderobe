@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+}
+
+* {
+    font-family: impact, sans serif;
+}
+
+/* nu vil jeg style min header / navbar */
+
+.menubar {
+    text-align: center;
+    background-color: beige;
+}
+
+.menubar ul {
+    display:inline-flex;
+    color: darkgreen;
+}
+
+.menubar ul li {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;  
+}
+
+.menubar ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li a:hover {
+    color: blue;
+}
+
+
+.menubar ul li a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.active, .menubar ul li:hover {
+    background: #f8a9f4;
+    border-radius: 3px;
+}
+
+.submenu {
+    display: none;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position:absolute;
+    background-color: beige;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid darkgreen;
+    border-radius: 0;
+    text-align: left;
+    background: transparent;
+}
+
+.menubar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li:hover .submenu ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+    color: blue;
+}
+
+.submenu2 {
+    display: none;
+}
+
+.hoverme:hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: beige;
+}
+
+/* nu vil jeg style mit logo og min H1 overskrift  */
+
+.logooverskrift {
+    display: flex; /* Aktiverer flexbox */
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+.logogrøn {
+    width: 100px; /* Bredde */
+    height: 100px; /* Højde */
+    margin-left: 100px; /* Højremargin */
+    margin-right: 100px;
+}
+
+h1 {
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+    margin-top: 20px;
+    color: darkgreen;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000;
+    width: 1500px;
+}
+
+/* jeg styler den første del af min artikel, så tekst og billede er placeret ved siden af hinanden */
+
+h3 {
+    color: darkgreen;
+}
+
+h4 {
+    color: darkgreen;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.forstedel a {
+    color: darkgreen;
+}
+
+.forstedel {
+    display: flex;
+}
+
+.forstedel {
+    border: #000 2px solid;
+    padding: 20px 20px;
+}
+
+
+/* jeg styler den blå figur */
+.blaafigur {
+    width: 400px;
+    margin-left: 100px;
+}
+
+/* jeg styler teksten for sig selv */
+.tekstforstedel {
+    width: 700px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+/* jeg styler nu min andendel af artiklen, ved at placere de to felter ved siden af hinanden først */
+
+.andendel {
+    display: flex;
+}
+
+/* jeg styler billede i andendel2 */
+
+.stof {
+    width: 700px;
+    height: 350px;
+    border: #000 2px solid;
+    padding: 30px 70px;
+    border-bottom: 1px;
+    
+}
+
+
+
+/* jeg styler teksten i den andendel 1, samt giver den en kant rundt om*/
+
+.andendel1 {
+    border: #000 solid 2px;
+    height: 354px;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    
+}
+
+
+/* jeg styler linket */
+
+.andendel1 a {
+    color: darkgreen;
+}
+
+/* jeg styler den tredjedel af artiklen, og placere de to sektioner ved siden af hinanden */
+
+.tredjedel {
+    display: flex;
+}
+/* jeg styler den blå klode */
+
+.blaaklode {
+    width: 500px;
+    height: 300px;
+    border: #000 solid 2px;
+    padding-top: 10px;
+    padding-right: 100px;
+    padding-left: 100px;
+    border-bottom: 4px;
+}
+
+/* jeg styler teksten */
+
+.tredjedel2 {
+    border: #000 solid 2px;
+    height: 305px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+/* jeg styler linket */
+
+.tredjedel2 a {
+    color: darkgreen;
+}
+
+/* jeg vil nu style den fjerdel, så teksten er matchene med de andre, style linket og ændre baggrundsfarven */
+.fjerdedel {
+    background-color: #f8a9f4;
+    border: 2px black solid ;
+    padding: 70px 80px;
+    height: 400px;
+    line-height: 50px;
+}
+
+.fjerdedel ul li {
+    color: blue;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fjerdedel h3 {
+    color: blue;
+}
+
+.fjerdedel a {
+    color: blue;
+    
+}
+
+.fjerdedel a {
+    transition: color 0.3s;
+}
+
+.fjerdedel a:hover {
+    color: darkgreen;
+}
+
+/* jeg vil nu style den nederste del af artikel, som er min femtedel */
+/* jeg vil placere de to sektioner ved siden af hinanden */
+
+.femtedel{
+    display: flex;
+}
+
+/* jeg styler nu den første del af femtedel */
+
+.bluse{
+    width: 300px;
+}
+
+.femtedel1 {
+    border: #000 2px solid;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.femtedel1 p {
+    padding: 50px 50px;
+}
+
+/* jeg styler linket i teksten, så den matcher og så den ændre sig ved hover */
+
+.femtedel1 p a {
+    color: darkgreen;
+    transition: color 0.3s;
+}
+
+.femtedel1 p a:hover {
+    color: blue;
+}
+
+/* jeg styler nu den anden del */
+
+.femtedel2 {
+    border: #000 2px solid;
+    padding: 100px;
+}
+
+/* jeg styler linket så den matcher teksten og ændre sig ved hover */
+
+
+.femtedel2 p a {
+    color: darkgreen;
+    transition: color 0.3s;
+}
+
+.femtedel2 p a:hover {
+    color: blue;
+}
+
+/* jeg vil nu style min footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* jeg styler sektionen med kontakt */
+
+.kontakt {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 33%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.kontakt a {
+    color: darkgreen;
+}
+
+.telefon {
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+
+
+/* jeg styler sektionen for sociale medier  */
+
+.socialemedier {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 33%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.socialemedier a {
+    color: darkgreen;
+}
+
+/* jeg styler den sidste boks med logo og titel */
+
+.grøngarderobe {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 35%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.grøngarderobe h3 {
+    color: darkgreen;
+    transition: color 0.3s;
+}
+
+.grøngarderobe h3:hover {
+    color: blue;
+}
+
+
+.lillelogo {
+    width: 100px;
+}
+
+/* jeg styler mine links i min footer, så de ændre sig ved hover*/
+
+.footer a {
+    transition: color 0.3s  ;
+}
+
+.footer a:hover {
+    color: blue;
+}
+
+

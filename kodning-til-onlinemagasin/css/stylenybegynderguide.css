@@ -1,0 +1,413 @@
+/* jeg starter med at nultstille browseren indstillinger */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    list-style: none;
+}
+
+* {
+    font-family: impact, sans serif;
+}
+
+/* nu vil jeg style min header / navbar */
+
+.menubar {
+    text-align: center;
+    background-color: beige;
+}
+
+.menubar ul {
+    display:inline-flex;
+    color: darkgreen;
+}
+
+.menubar ul li {
+    width: 220px;
+    margin: 15px;
+    padding: 15px;  
+}
+
+.menubar ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li a:hover {
+    color: blue;
+}
+
+
+.menubar ul li a {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+.active, .menubar ul li:hover {
+    background: #f8a9f4;
+    border-radius: 3px;
+}
+
+.submenu {
+    display: none;
+}
+
+.menubar ul li:hover .submenu {
+    display: block;
+    position:absolute;
+    background-color: beige;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menubar ul li:hover .submenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menubar ul li:hover .submenu ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px solid darkgreen;
+    border-radius: 0;
+    text-align: left;
+    background: transparent;
+}
+
+.menubar ul li:hover .submenu ul li:last-child {
+    border-bottom: none;
+}
+
+.menubar ul li:hover .submenu ul li a {
+    transition: color 0.3s;
+}
+
+.menubar ul li:hover .submenu ul li a:hover {
+    color: blue;
+}
+
+.submenu2 {
+    display: none;
+}
+
+.hoverme:hover .submenu2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: beige;
+}
+
+
+/* nu vil jeg style mit logo og min H1 overskrift  */
+
+.logooverskrift {
+    display: flex; /* Aktiverer flexbox */
+    align-items: center;
+    margin-left: 100px;
+    
+}
+
+.logogrøn {
+    width: 100px; /* Bredde */
+    height: 100px; /* Højde */
+    margin-left: 100px; /* Højremargin */
+    margin-right: 100px;
+}
+
+h1 {
+    font-family: Impact, sans-serif;
+    font-size: 100px;
+    margin-top: 20px;
+    color: darkgreen;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #000;
+    width: 1500px;
+}
+
+/* jeg styler den første del af min artikel */
+
+.førstedel {
+    font-family: Impact, sans-serif;
+    font-size: 16px;
+    color: darkgreen;
+    line-height: 30px;
+    border: solid 2px black;
+    width: 50%;
+    height: 915px;
+    padding-bottom: 25px;
+    border-bottom: 6px;
+    
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    color: darkgreen;
+    width: 300px;
+    line-height: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.overskriftforstedel {
+    
+    text-align: center;
+    margin-right: 175px;
+
+}
+
+.tekstførstedel {
+    text-align: center;
+    margin-left: 215px;
+}
+
+.blaafigur {
+    width: 300px;
+    margin-left: 300px;
+}
+
+.vandret {
+    margin: 0;
+}
+
+
+/* jeg styler nu anden del af min artikel, som skal stå ved siden af den første del */
+
+.overstedel {
+    display: flex;
+   
+}
+
+
+.nybegynderguide2 {
+    width: 500px;
+    height: 600px;
+    margin-left: 115px;
+}
+
+.andendel {
+    flex: 1;
+    border: solid 2px black;
+    width: 50%;
+    padding-top: 30px;
+    height: 915px;
+    background-color: #f8a9f4;
+}
+
+
+.tekstandendel {
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: bold;
+    width: 600px;
+    padding-left: 100px;
+}
+
+.tekstandendel a {
+    color: darkgreen;
+}
+/* jeg styler de to kolonner, så det er under den første del af artiklen */
+
+.smakolonner {
+    display: flex;
+    margin: 0;
+}
+    
+
+.tredjedel {
+    border: #000 2px solid;
+    text-align: center;
+    padding-top: 150px;
+    padding-right: 40px; 
+    padding-left: 40px;
+    height: 545px;
+}
+
+.fjerdedel {
+    border: #000 2px solid;
+    text-align: center;
+    padding-top: 150px;
+    padding-right: 40px;
+    padding-left: 12px;
+   
+}
+   
+/* jeg styler det første billede som er i midterdelen */
+
+.nybegynderguide1 {
+    width: 500px;
+    border: #000 2px solid;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 38px;
+    padding-right: 50px;
+}
+
+/* jeg vil nu gøre sådan at mine tekstbokse bliver placeret ved siden af mit billede */
+
+.midterdelen {
+    display: flex;
+    height: 600px;
+}
+
+/* jeg vil nu redigere min ul og li i tekstboksene */
+
+.liste {
+    list-style-type: none;
+}
+
+.liste li::before {
+    content: "•";
+    color: darkgreen;
+    display: inline-block;
+    width: 1em;
+    margin-right: 0.5em; }
+
+.liste li {
+    display: block;
+    margin: 5px;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+.midterdelen h3 {
+    color: darkgreen;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+/* jeg vil nu style de to tekstbokse, så de også får en tydleig border omkring sig */
+
+.tekstboks1 {
+    border: #000 2px solid;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.tekstboks1 li {
+    color: darkgreen;
+}
+
+.tekstboks1 li a {
+    color: darkgreen;
+}
+
+.tekstboks2 {
+    border: #000 2px solid;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.tekstboks2 li {
+    color: darkgreen;
+}
+
+.tekstboks2 li a {
+    color: darkgreen;
+}
+
+/* jeg vil nu style min footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* jeg styler sektionen med kontakt */
+
+.kontakt {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 33%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.kontakt a {
+    color: darkgreen;
+}
+
+.telefon {
+    padding-left: 155px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+
+
+/* jeg styler sektionen for sociale medier  */
+
+.socialemedier {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 33%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.socialemedier a {
+    color: darkgreen;
+}
+
+/* jeg styler den sidste boks med logo og titel */
+
+.grøngarderobe {
+    padding-top: 25px;
+    color: darkgreen;
+    font-weight: bold;
+    border: #000 solid 2px;
+    width: 35%;
+    line-height: 50px;
+    border-bottom: 4px solid black;
+    padding-bottom: 25px;
+}
+
+.grøngarderobe a {
+    color: darkgreen;
+}
+
+.lillelogo {
+    width: 100px;
+}
+
+/* jeg styler mine a links til at ændre sig ved hoover */
+
+
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: blue;}
+
+a h3 {
+    transition: color 0.3s;
+}
+
+a h3:hover {
+    color: blue;
+}
+
+
+
+
